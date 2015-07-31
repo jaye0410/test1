@@ -1,0 +1,27 @@
+article {
+	margin-left: 10px;
+}
+h2 {
+}
+section {
+	padding: 5px 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background: #000;
+	color: #00FF00;
+}
+p {
+	line-height: 1em;
+}
+div.hint {
+	margin: 15px 10px;
+	padding: 5px;
+	color: #0000FF;
+	background: #C0C0C0;
+	font-style: italic;
+}
+pre {
+	font-size: 1.5em;
+}
+
+
