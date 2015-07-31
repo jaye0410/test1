@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Git Memo</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h1>Gitでローカルリポジトリを作成するメモ</h1>
+	<article>
+		<h2>HomebrewでGitをインストールする</h2>
+		<section>
+<pre>$ brew install git</pre>
+		</section>
+
+		<h2>アカウントをコンフィグに登録する</h2>
+		<section>
+<pre>
+$ git config --global user.name "jayeXXXX"
+$ git config --blobal user.email "xxxx@gmail.com"
+</pre>
+		</section>
+
+		<h2>ローカルGitリポジトリ用のディレクトリを作成する</h2>
+		<section>
+<pre>
+$ mkdir gitrepos
+$ cd gitrepos
+$ mkdir test1
+$ cd test1
+</pre>
+		</section>
+
+		<h2>管理対象のファイル(index.html)を作成する</h2>
+		<section>
+<pre>$ vim index.html</pre>
+		</section>
+
+		<h2>ローカルリポジトリにコミットする手前のindex領域にファイルをステージングする</h2>
+		<section>
+<pre>$ git add index.html</pre>
+			<div class="hint">
+				<p>* 全てのファイルをステージングするには以下のコマンドを使う</p>
+				<p>$ git add --all</p>
+			</div>
+		</section>
+
+		<h2>状態を確認する</h2>
+		<section>
+<pre>
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+</pre>
+		</section>
+
+		<h2>./css/style.cssを作成して再度状態を確認する</h2>
+		<section>
+<pre>
+$ mkdir css
+$ cd css
+$ vim style.css
+
+$ git status
+</pre>		
+		</section>
+
+		<h2>ローカルリポジトリへコミットする</h2>
+		<section>
+<pre>
+$ git commit
+
+"Text Editorを開かずコメントを付けたい場合は以下"
+$ git commit -m "something to describe."
+</pre>		
+		</section>
+
+	</article>
+</body>
+</html>
