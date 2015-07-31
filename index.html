@@ -39,7 +39,21 @@ $ cd test1
 		<h2>ローカルリポジトリにコミットする手前のindex領域にファイルをステージングする</h2>
 		<section>
 <pre>$ git add index.html</pre>
-			<div class="hint">
+		<div class="hint">
+			<ul>
+				<li>
+				*全てのファイルをステージングする
+				<p>$ git add --all</p>
+				</li>
+				<li>
+				*カレントディレクトリ配下を全てステージングする
+				<p>s$1 git add .</p>
+				</li>
+				<li>
+				*各ファイルの差分を確認してステージングを決める
+				<p>$git add -p</p>
+				</li>
+			</ul>
 				<p>* 全てのファイルをステージングするには以下のコマンドを使う</p>
 				<p>$ git add --all</p>
 			</div>
@@ -79,6 +93,16 @@ $ git commit
 "Text Editorを開かずコメントを付けたい場合は以下"
 $ git commit -m "something to describe."
 </pre>		
+		</section>
+
+		<h2>ログを確認する</h2>
+		<section>
+<pre>
+$ git log
+
+"ファイル名をステータスも確認する場合は以下"
+$ git log --name-status
+</pre>
 		</section>
 
 	</article>
